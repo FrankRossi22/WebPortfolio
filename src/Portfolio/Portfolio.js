@@ -1,5 +1,4 @@
 import './portfolio.css';
-import Connect4 from './Connect4';
 import Projects from './Projects';
 import Experience from './Experience';
 import { useRef, useEffect } from 'react';
@@ -29,7 +28,7 @@ function Portfolio({setPosition, currPosition}) {
       newPos[4] = rect.y;
     }
     setPosition(newPos);
-  }, []);  
+  }, [currPosition, setPosition]);  
 
   return (
     <div className="portfolioSections">
@@ -40,14 +39,14 @@ function Portfolio({setPosition, currPosition}) {
     </div>
   );
 }
-function AboutMe() {
-  return (
-    <section className="aboutMe" id='aboutMe'>
-      <h2>About Me</h2>
-      <p>I am Super Dope</p>
-    </section>
-  );
-}
+// function AboutMe() {
+//   return (
+//     <section className="aboutMe" id='aboutMe'>
+//       <h2>About Me</h2>
+//       <p>I am Super Dope</p>
+//     </section>
+//   );
+// }
 
 function Skills({elRef}) {
   return (
@@ -124,16 +123,16 @@ function Skills({elRef}) {
   );
 }
 
-function Games({elRef}) {
-  return (
-    <section className="games" id='games'>
-      <h2 ref={elRef}>Games</h2>
-      <p>Try my Games!</p>
-      <div className='gameContainer'>
-        <Connect4 />
-      </div>
+// function Games({elRef}) {
+//   return (
+//     <section className="games" id='games'>
+//       <h2 ref={elRef}>Games</h2>
+//       <p>Try my Games!</p>
+//       <div className='gameContainer'>
+//         <Connect4 />
+//       </div>
       
-    </section>
-  );
-}
+//     </section>
+//   );
+// }
 export default Portfolio;

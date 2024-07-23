@@ -17,10 +17,9 @@ function useInterval(callback, delay) {
   }, [delay])
 }
 function Banner() {
-  const [isExtended, setIsExtended] = useState(false)
+  //const [isExtended, setIsExtended] = useState(false)
   const [currBackground, setCurrBackground] = useState(1)
   const [sub, setSub] = useState(false);
-  const backgrounds = ['bannerBackground1', 'bannerBackground2', 'bannerBackground3', 'bannerBackground4'];
 
   function updateBackground() {
     var mod = 1;
@@ -38,17 +37,16 @@ function Banner() {
   useEffect(() => {
     
   })
-  const height = (isExtended ? 800 : 400)
   // style={{"background-color": "#000000"}}
-  const myStyle = {
-    height: height
-  }
+  // const myStyle = {
+  //   height: (isExtended ? 800 : 400)
+  // }
   return (
-      <div className={'bannerBackground' + currBackground} tabIndex={0} style={myStyle}>
+      <div className={'bannerBackground' + currBackground} tabIndex={0}>
       <div className='banner'>
-        <a id='top'></a>
+        <a id='top' href='#topScreen'><p></p></a>
         <div className='bannerFlex'>
-          <div className='bannerPicture'><img src='./images/portIcon.jpg' /></div> 
+          <div className='bannerPicture'><img src='./images/portIcon.jpg' alt='npmFrank Rossi'/></div> 
           <div className='aboutMe'>
             <h1>Frank Rossi</h1>
             <p>CSE Student at The Ohio State University</p>

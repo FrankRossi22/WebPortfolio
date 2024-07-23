@@ -5,11 +5,11 @@ function Projects({elRef}) {
   function Project({ name, createdWith, description, image, id, links }) {
     var createdWithLis = [];
     for(var i = 0; i < createdWith.length; i++) {
-      createdWithLis.push(<React.Fragment key={'projLI' + id + i}><li><img src={createdWith[i].src} style={createdWith[i].myStyle} /></li></React.Fragment>)
+      createdWithLis.push(<React.Fragment key={'projLI' + id + i}><li><img src={createdWith[i].src} style={createdWith[i].myStyle} alt={createdWith[i].iconName} /></li></React.Fragment>)
     }
     var linkAs = [];
     for(i = 0; i < links.length; i++) {
-      linkAs.push(<React.Fragment key={'ProjLink' + id + i}><a className='projectLink' href={links[i].link}><p> <img src={links[i].icon} />{links[i].name}</p></a></React.Fragment>)
+      linkAs.push(<React.Fragment key={'ProjLink' + id + i}><a className='projectLink' href={links[i].link}><p> <img src={links[i].icon} alt={links[i].name}/>{links[i].name}</p></a></React.Fragment>)
     }
     return (
       <div className='projectsFlex' >
@@ -27,7 +27,7 @@ function Projects({elRef}) {
             <div className='projectLinks'>{linkAs}</div>
             </div>
           <div className='projectImage'>
-            <img src={image}></img>
+            <img src={image} alt={name + ' Site'}></img>
           </div>
         </div>
         <div className='projectFiller'></div>
@@ -37,15 +37,15 @@ function Projects({elRef}) {
   }
 
   const lunchCountMadeWith = [
-    { myStyle: {width: 30, height: 30 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"},
-    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"},
-    { myStyle: {width: 40, height: 40 }, src: "./images/nedB.png"},
-    { myStyle: {width: 70, height: 70 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"}
+    { myStyle: {width: 30, height: 30 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", iconName: 'JS'},
+    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg", iconName: 'Node JS'},
+    { myStyle: {width: 40, height: 40 }, src: "./images/nedB.png", iconName: 'NeDB'},
+    { myStyle: {width: 70, height: 70 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg", iconName: 'Express'}
   ]
   const bajaMadeWith = [
-    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"},
-    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg"},
-    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg"},
+    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg", iconName: 'Python'},
+    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg", iconName: 'Arduino'},
+    { myStyle: {width: 40, height: 40 }, src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg", iconName: 'RasPi'},
   ]
 
   return (
