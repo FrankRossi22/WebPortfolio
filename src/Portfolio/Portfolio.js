@@ -2,7 +2,7 @@ import './portfolio.css';
 //import Connect4 from './Connect4';
 import Projects from './Projects';
 import Experience from './Experience';
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import React from "react";
 
 function Portfolio() {
