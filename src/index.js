@@ -13,7 +13,7 @@ To Do -
     Write About Me Section
     Setup Extra Info Section
     Figure out banner design
-  Portfolio - 
+  Portfolio - `
     Add Projects
     Add Skills
     Setup Experience Section
