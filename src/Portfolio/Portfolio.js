@@ -1,4 +1,5 @@
 import './portfolio.css';
+//import Connect4 from './Connect4';
 import Projects from './Projects';
 import Experience from './Experience';
 import { useRef, useEffect } from 'react';
@@ -28,7 +29,7 @@ function Portfolio({setPosition, currPosition}) {
       newPos[4] = rect.y;
     }
     setPosition(newPos);
-  }, [currPosition, setPosition]);  
+  }, []);  
 
   return (
     <div className="portfolioSections">
