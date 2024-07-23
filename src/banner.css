@@ -1,0 +1,113 @@
+@font-face {
+  font-family: playFair;
+  src: url(fonts/PlayFairDisplay.ttf);
+}
+
+
+.bannerBackground4 {
+  background-color: #000000;
+  background-blend-mode: difference ;
+  background-image: url('images/image3.jpg');
+  background-size: cover;
+  background-repeat: round;
+  transition: background-color 3s ease, height 1s ease-in-out;
+}
+.bannerBackground3 {
+  background-color: #020918;
+  background-blend-mode: difference ;
+  background-image: url('images/image3.jpg');
+  background-size: cover;
+  background-repeat: round;
+  transition: background-color 3s ease, height 1s ease-in-out;
+}
+.bannerBackground2 {
+  background-color: #0b1a3b;
+  background-blend-mode: difference ;
+  background-image: url('images/image3.jpg');
+  background-size: cover;
+  background-repeat: round;
+  transition: background-color 3s ease-in-out, height 1s ease-in-out;
+}
+.bannerBackground1 {
+  background-color: #102450;
+  background-blend-mode: difference ;
+  background-image: url('images/image3.jpg');
+  background-size: cover;
+  background-repeat: round;
+  transition: background-color 3s ease-in-out, height 1s ease-in-out;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  justify-content: end; 
+  transition: all .6s ease;
+}
+.bannerExtended {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  justify-content: end; 
+  transition: all .6s ease;
+    
+}
+.bannerFlex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  
+}
+.bannerPicture {
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+  /* background-image: url('images/portIcon.jpg'); */
+  border-radius: 50%;
+  overflow: hidden;
+}
+.bannerPicture img{
+  height: 120px;
+  width: 120px;
+  transform: translateX(-8%) translateY(-10%);
+  border-radius: 50%;
+}
+.aboutMe {
+  margin-top: 20px;
+  font-size: 1.4em;
+  font-family: playFair;
+}
+
+
+.bannerExtension {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  text-align: center;
+  justify-content: end;
+  align-items: center; 
+  transition: all .6s ease; 
+}
+.bannerExtensionExtended {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+
+  justify-content: end;
+  align-items: center; 
+  transition: all .6s ease;
+}
+.bannerButton {
+  width: 200px;
+  border-radius: 10px;
+  opacity: .8;
+}

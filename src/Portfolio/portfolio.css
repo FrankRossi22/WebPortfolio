@@ -1,0 +1,107 @@
+@font-face {
+  font-family: playFair;
+  src: url(../fonts/PlayFairDisplay.ttf);
+}
+
+.portfolioSections {
+  background-color: #faf7f7;
+  padding: 2%;
+}
+
+.portfolioSections .projects{
+  margin-top: 3%;
+}
+.portfolioSections div{
+  margin-bottom: 100px;
+  text-align: center;
+  margin-top: -60px; 
+  scroll-margin-top: 100px;
+}
+.portfolioSections .skillsMain{
+  margin-top: 35px;
+}
+.portfolioSections section{
+  margin-bottom: 100px;
+  text-align: center;
+  margin-top: -60px; 
+  z-index: -1;
+  scroll-margin-top: 100px;
+}
+svg {
+  width: 100px;
+  transition: transform .2s ease-out;
+}
+svg:hover {
+  transform: scale(1.15);
+}
+.skillsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.skills {
+  min-height: 400px
+}
+
+.skillsFiller {
+  display: inline-block;
+  flex-grow: 1;
+  min-height: 10px;
+}
+.skillsMain{
+  display: inline-block;
+  max-width: 600px;
+}
+
+.game div{
+  margin-bottom: 0;
+  text-align: center;
+}
+.game {
+  margin-bottom: 200px;
+}
+
+
+
+/*
+  Connect 4
+*/
+.portfolioSections .connect4 {
+  text-align: center;
+  margin-top: 0;
+}
+.portfolioSections .connect4Board {
+  text-align: center;
+  margin-top: 0;
+}
+.portfolioSections .c4Status {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.portfolioSections .connect4Column {
+  display: inline-flex;
+  flex-direction: column;
+  width: 30px;
+  margin-top: 0;
+}
+.portfolioSections .connect4Square {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #888888;
+  font-size: 20px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+}
+.portfolioSections .gameContainer {
+  margin-top: 70px;
+  display: flexbox;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}

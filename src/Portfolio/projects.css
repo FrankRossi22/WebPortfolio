@@ -1,0 +1,133 @@
+.projects div {
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.projects .projectsFlex {
+  align-content: center;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+.projectDiv {
+  display: inline-block;
+  width: 800px;
+  height: 350px;
+  outline: auto;
+  outline-color: #e4e4e4;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  transition: all .8s ease;  
+
+}
+.projectDiv:hover {
+  background-color: #e4e4e4;
+  transition: background-color .6s;
+}
+.projectDescription {
+  display: inline-block;
+  margin-left: 10px;
+  width: 45%;
+  height: 90%;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 2%;
+  padding-right: 2%;
+  outline: none;
+}
+.projectDescP{
+  text-align: left;
+  margin-top: 10px;
+  height: 180px;
+}
+.projectImage {
+  display: inline-flex;
+  width: 52%;
+  height: 100%;
+  border-radius: 5%;
+  
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.projectImage img{
+  width: 490px;
+  height: 370px;
+  vertical-align: bottom;
+  object-position: 20px 30px;
+  transform-origin: right;
+  transition: all .3s ease-in-out;
+}
+.projectDiv:hover .projectImage img {
+  transform-origin: right;
+  transform: rotate(-2deg) scale(1.03);
+}
+.projectDiv:hover .projectCreatedUL img {
+  transform: scale(1.07);
+}
+.projectDiv h3 {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.projectFiller {
+  display: inline-block;
+  flex-grow: 1;
+  min-height: 10px;
+}
+.projectCreatedWith {
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  height: 40px;
+}
+.projectCreatedWith p{
+  display: inline-block;
+  margin: 0;
+  height: 18px;
+}
+.projectCreatedUL {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  padding-left: 5px;
+  align-items: center;
+  gap: 15px;
+}
+
+.projectCreatedUL img{
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transition: transform .3s ease-in-out;
+}
+.projectDescription .projectLinks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.projectDescription .projectLink {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  border: 1px solid #8b8b8b;
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
+  transition: all .1s ease-in-out;
+}
+.projectLink:hover {
+  background-color: #e7e7e7;
+  transform: scale(1.05);
+}
+.projectLink img {
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+.projectLink p {
+  line-height: 38px;
+  vertical-align: middle;
+}
