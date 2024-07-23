@@ -40,7 +40,7 @@
 }
 .projectImage {
   display: inline-flex;
-  width: 52%;
+  width: 430px;
   height: 100%;
   border-radius: 5%;
   
@@ -55,6 +55,8 @@
   object-position: 20px 30px;
   transform-origin: right;
   transition: all .3s ease-in-out;
+  
+  
 }
 .projectDiv:hover .projectImage img {
   transform-origin: right;

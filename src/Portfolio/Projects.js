@@ -57,7 +57,7 @@ function Projects({elRef}) {
       description={"With the large growth of LMS (Learning Management Systems) over the past decade, " 
         + "Lunch Count forms as a building block to improving these platforms by providing a robust system for tracking student lunch habits and orders."
         + "Users (Students, Teachers, and Admin) each have their own dashboard with admin having sole access to lunch creation and updating. This was created using JS, Express, and NedB Databases"} 
-      image={"./images/image.png"}/>
+      image={"./images/lunchCount.png"}/>
       <Project name='Baja Buckeyes' createdWith={bajaMadeWith} id={'BB'} links={[
         {link: 'https://osubajasae.wixsite.com/bajabuckeyes', icon: './images/bajaIcon.webp', name: 'Baja'}
       ]}
@@ -66,7 +66,7 @@ function Projects({elRef}) {
         + " The DAQ sub-team focuses on working with other sub-teams to create testing programs for their elements of the vehicle." 
         + " This year the team placed 12/61 and 31/107 at Baja SAE California & Pennsylvania respectively."
       } 
-      image={"./images/image.png"}/>
+      image={"./images/baja.png"}/>
   
     </section>
   );

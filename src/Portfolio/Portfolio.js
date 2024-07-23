@@ -5,31 +5,12 @@ import Experience from './Experience';
 import { useRef, useEffect } from 'react';
 import React from "react";
 
-function Portfolio({setPosition, currPosition}) {
+function Portfolio() {
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
-  const gamesRef = useRef(null);
-  useEffect(() => {
-    var newPos = currPosition.slice();
-    if (projectRef.current) {
-      const rect = projectRef.current.getBoundingClientRect();
-      newPos[1] = rect.y;
-    }
-    if (skillsRef.current) {
-      const rect = skillsRef.current.getBoundingClientRect();
-      newPos[2] = rect.y;
-    }
-    if (experienceRef.current) {
-      const rect = experienceRef.current.getBoundingClientRect();
-      newPos[3] = rect.y;
-    }
-    if (gamesRef.current) {
-      const rect = gamesRef.current.getBoundingClientRect();
-      newPos[4] = rect.y;
-    }
-    setPosition(newPos);
-  }, []);  
+  //const gamesRef = useRef(null);
+  
 
   return (
     <div className="portfolioSections">
