@@ -49,7 +49,7 @@ function Banner() {
           <div className='bannerPicture'><img src='./images/portIcon.jpg' alt='npmFrank Rossi'/></div> 
           <div className='aboutMe'>
             <h1>Frank Rossi</h1>
-            <p>CSE Student at The Ohio State University</p>
+            <p>CSE Student at The Ohio Stte University</p>
             </div>
         </div>
         <br />
