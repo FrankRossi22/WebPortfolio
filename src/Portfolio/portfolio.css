@@ -7,6 +7,25 @@
   background-color: #faf7f7;
   padding: 2%;
 }
+.portfolioSections input {
+  margin: 10px;
+  border-color: #dfdfdf;
+  border-radius: 5px;
+  border-style: solid;
+  max-width: 500px;
+  padding-top: 5px;
+}
+.portfolioSections form {
+  margin-top: 20px;
+}
+
+.contactEmail {
+  height: 30px;
+  padding-bottom: 5px;
+}
+.contactComment {
+  padding-bottom: 150px;
+ }
 
 .portfolioSections .projects{
   margin-top: 3%;
@@ -43,8 +62,9 @@ svg:hover {
   flex-wrap: wrap;
   list-style: none;
 }
-.skills {
-  min-height: 400px
+.portfolioSections .skills {
+  min-height: 400px;
+  margin-bottom: 20px;
 }
 
 .skillsFiller {

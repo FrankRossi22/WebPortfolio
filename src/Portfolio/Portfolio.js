@@ -9,7 +9,7 @@ function Portfolio({screenSize}) {
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
-  //const gamesRef = useRef(null);
+  const contactRef = useRef(null);
   
 
   return (
@@ -17,6 +17,7 @@ function Portfolio({screenSize}) {
      <Projects elRef={projectRef} screenSize={screenSize}/>
      <Skills elRef={skillsRef} screenSize={screenSize}/>
      <Experience elRef={experienceRef} screenSize={screenSize}/>
+     <ContactMe elRef={contactRef} screenSize={screenSize}/>
      {/* <Games elRef={gamesRef}/> */}
     </div>
   );
@@ -104,7 +105,21 @@ function Skills({elRef}) {
     </section>
   );
 }
+function ContactMe({elRef}) {
+  return (
+    <section className="contactMe" id='contactMe'>
+      <h2 ref={elRef}>Contact Me</h2>
+      <p>Contact me at <a href="mailto:rossi.229@osu.edu">rossi.229@osu.edu</a> or through the form below.</p> 
+      <form action="mailto:rossi.229@osu.edu" method="post" encType="text/plain" className='contactForm'>
 
+      <input type="text" name="mail" size='50' className='contactEmail' placeholder='Your Email'/><br/>
+
+      <input type="text" name="comment" size="50" className='contactComment' placeholder='Your Message'/><br/><br/>
+      <input type="submit" value="Send" className='contactButton'/>
+      </form>
+    </section>
+  );
+}
 // function Games({elRef}) {
 //   return (
 //     <section className="games" id='games'>
