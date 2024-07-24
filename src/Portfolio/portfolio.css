@@ -99,8 +99,10 @@ svg:hover {
   }
   .portfolioSections .projectDiv {
     outline: auto;
+    outline-color: #e4e4e4;
   }
   .portfolioSections .experienceDiv {
     outline: auto;
+    outline-color: #e4e4e4;
   }
 }
