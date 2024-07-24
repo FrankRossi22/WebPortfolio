@@ -61,7 +61,7 @@ function Projects({elRef, screenSize}) {
       ]}
       description={"With the large growth of LMS (Learning Management Systems) over the past decade, " 
         + "Lunch Count forms as a building block to improving these platforms by providing a robust system for tracking student lunch habits and orders."
-        + "Users (Students, Teachers, and Admin) each have their own dashboard with admin having sole access to lunch creation and updating. This was created using JS, Express, and NedB Databases"} 
+        + "Users (Students, Teachers, and Admin) each have their own dashboard with admin having sole access to lunch creation and updating. This was created using JS, Express, and NedB Databases."} 
       image={"./images/lunchCount.png"}/>
       <Project name='Baja Buckeyes' createdWith={bajaMadeWith} id={'BB'} links={[
         {link: 'https://osubajasae.wixsite.com/bajabuckeyes', icon: './images/bajaIcon.webp', name: 'Baja'}
