@@ -153,6 +153,7 @@ html {
 }
 .topBar ul{
   display: flex;
+  flex-wrap: wrap;
   gap: 5%;
   justify-content: center;
   list-style: none;
@@ -191,6 +192,7 @@ html {
 .topBar a{
   display: block;
   text-decoration: none;
+  padding: 5px;
   padding-top: 12px;
   padding-bottom: 12px;
   font-size: 12px;
@@ -219,4 +221,29 @@ html {
   border-radius: 27px;
   width: 600px;
   height: 54px;
+}
+@media (min-width: 200px) {
+  .topBar a{
+    font-size: 12px;
+    transition: all .7s ease;  
+  }
+  .topBar li{
+    display: inline-block;
+    width:fit-content;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: all .7s ease;  
+  }
+}
+@media (min-width: 620px) {
+  .topBar a{
+    font-size: 12px;
+    transition: all .7s ease;  
+  }
+  .topBar li{
+    display: inline-block;
+    width: 15%;
+    padding: 6px;
+    transition: all .7s ease;  
+  }
 }
