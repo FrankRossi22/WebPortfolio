@@ -92,6 +92,7 @@
     appearance: inherit;
     -webkit-appearance: none;
     height: 340px;
+    border: 0px;
     outline-color: black;
     transition: all .5s;  
   }
