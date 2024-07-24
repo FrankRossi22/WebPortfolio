@@ -7,7 +7,7 @@
 .bannerBackground4 {
   background-color: #000000;
   background-blend-mode: difference ;
-  background-image: url('images/image3.jpg');
+  background-image: url('images/image3.webp');
   background-size: cover;
   background-repeat: round;
   transition: background-color 3s ease, height 1s ease-in-out;
@@ -15,7 +15,7 @@
 .bannerBackground3 {
   background-color: #020918;
   background-blend-mode: difference ;
-  background-image: url('images/image3.jpg');
+  background-image: url('images/image3.webp');
   background-size: cover;
   background-repeat: round;
   transition: background-color 3s ease, height 1s ease-in-out;
@@ -23,7 +23,7 @@
 .bannerBackground2 {
   background-color: #0b1a3b;
   background-blend-mode: difference ;
-  background-image: url('images/image3.jpg');
+  background-image: url('images/image3.webp');
   background-size: cover;
   background-repeat: round;
   transition: background-color 3s ease-in-out, height 1s ease-in-out;
@@ -31,7 +31,7 @@
 .bannerBackground1 {
   background-color: #102450;
   background-blend-mode: difference ;
-  background-image: url('images/image3.jpg');
+  background-image: url('images/image3.webp');
   background-size: cover;
   background-repeat: round;
   transition: background-color 3s ease-in-out, height 1s ease-in-out;
@@ -70,7 +70,6 @@
   height: 130px;
   width: 130px;
   background-color: #000000;
-  /* background-image: url('images/portIcon.jpg'); */
   border-radius: 50%;
   overflow: hidden;
 }
