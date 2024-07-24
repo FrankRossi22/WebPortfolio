@@ -42,7 +42,7 @@ function Banner() {
   //   height: (isExtended ? 800 : 400)
   // }
   return (
-      <div className={'bannerBackground' + currBackground} tabIndex={0}>
+      <div className={'bannerBackground' + 4} tabIndex={0}>
       <div className='banner'>
         <a id='top' href='#topScreen'><p></p></a>
         <div className='bannerFlex'>
