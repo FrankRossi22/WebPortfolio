@@ -10,10 +10,10 @@
 }
 .experienceDiv {
   display: inline-block;
-  outline: none;
   max-width: 500px;
   height: 250px;
-  
+  outline: auto;
+  outline-color: #e4e4e4;
   background-color: #f3f3f3;
   border-radius: 1%;
   transition: all .6s ease;  
@@ -90,6 +90,7 @@
   .experienceDiv {
     display: block;
     height: 340px;
+    outline-color: black;
     transition: all .5s;  
   }
   .experience .experienceFlex {
