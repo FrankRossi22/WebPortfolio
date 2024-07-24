@@ -9,7 +9,7 @@
 }
 .projectDiv {
   display: inline-block;
-  width: 800px;
+  max-width: 800px;
   height: 350px;
   outline: auto;
   outline-color: #e4e4e4;
@@ -133,3 +133,62 @@
   line-height: 38px;
   vertical-align: middle;
 }
+@media (min-width: 200px) {
+  .projectDiv {
+    display: inline-block;
+    max-width: 600px;
+    height: 400px;
+    outline: auto;
+    outline-color: #e4e4e4;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    transition: all .8s ease;  
+  
+  }
+  .projectDescription {
+    display: inline-block;
+    margin-left: 10px;
+    width: 90%;
+    height: 100%;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 2%;
+    padding-right: 2%;
+    outline: none;
+  }
+  .projectDescP{
+    text-align: left;
+    margin-top: 10px;
+    height: 200px;
+  }
+}
+@media (min-width: 850px) {
+  .projectDiv {
+    display: inline-block;
+    max-width: 800px;
+    height: 350px;
+    outline: auto;
+    outline-color: #e4e4e4;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    transition: all .8s ease;  
+  
+  }
+  .projectDescription {
+    display: inline-block;
+    margin-left: 10px;
+    width: 45%;
+    height: 90%;
+    text-align: left;
+    vertical-align: top;
+    padding-left: 2%;
+    padding-right: 2%;
+    outline: none;
+  }
+  .projectDescP{
+    text-align: left;
+    margin-top: 10px;
+    height: 180px;
+  }
+}
+

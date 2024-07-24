@@ -1,7 +1,7 @@
 import './projects.css';
+
 import React from 'react';
-function Projects({elRef}) {
-  
+function Projects({elRef, screenSize}) {
   function Project({ name, createdWith, description, image, id, links }) {
     var createdWithLis = [];
     for(var i = 0; i < createdWith.length; i++) {
@@ -10,6 +10,13 @@ function Projects({elRef}) {
     var linkAs = [];
     for(i = 0; i < links.length; i++) {
       linkAs.push(<React.Fragment key={'ProjLink' + id + i}><a className='projectLink' href={links[i].link}><p> <img src={links[i].icon} alt={links[i].name}/>{links[i].name}</p></a></React.Fragment>)
+    }
+    var projImage = null;
+    if(screenSize >= 850 ) {
+      projImage = 
+      <div className='projectImage'>
+        <img src={image} alt={name + ' Site'}></img>
+      </div>;
     }
     return (
       <div className='projectsFlex' >
@@ -26,9 +33,7 @@ function Projects({elRef}) {
             <p className='projectDescP'>{description}</p>
             <div className='projectLinks'>{linkAs}</div>
             </div>
-          <div className='projectImage'>
-            <img src={image} alt={name + ' Site'}></img>
-          </div>
+          {projImage}
         </div>
         <div className='projectFiller'></div>
         

@@ -5,7 +5,7 @@ import Experience from './Experience';
 import { useRef } from 'react';
 import React from "react";
 
-function Portfolio() {
+function Portfolio({screenSize}) {
   const projectRef = useRef(null);
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
@@ -14,9 +14,9 @@ function Portfolio() {
 
   return (
     <div className="portfolioSections">
-     <Projects elRef={projectRef}/>
-     <Skills elRef={skillsRef}/>
-     <Experience elRef={experienceRef}/>
+     <Projects elRef={projectRef} screenSize={screenSize}/>
+     <Skills elRef={skillsRef} screenSize={screenSize}/>
+     <Experience elRef={experienceRef} screenSize={screenSize}/>
      {/* <Games elRef={gamesRef}/> */}
     </div>
   );

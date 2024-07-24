@@ -153,18 +153,38 @@ html {
 /*
   Connect 4
 */
-.connect4 {
+.game div{
+  margin-bottom: 0;
   text-align: center;
 }
-.c4Status {
-  margin-bottom: 10px;
+.game {
+  margin-bottom: 200px;
 }
-.connect4Column {
+
+
+
+/*
+  Connect 4
+*/
+.portfolioSections .connect4 {
+  text-align: center;
+  margin-top: 0;
+}
+.portfolioSections .connect4Board {
+  text-align: center;
+  margin-top: 0;
+}
+.portfolioSections .c4Status {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.portfolioSections .connect4Column {
   display: inline-flex;
   flex-direction: column;
   width: 30px;
+  margin-top: 0;
 }
-.connect4Square {
+.portfolioSections .connect4Square {
   width: 30px;
   height: 30px;
   background: #fff;
@@ -173,4 +193,11 @@ html {
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
+}
+.portfolioSections .gameContainer {
+  margin-top: 70px;
+  display: flexbox;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: 50px;
 }

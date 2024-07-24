@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TopBar from './topBar';
 import Banner from './Banner';
 import Portfolio from './Portfolio/Portfolio';
@@ -20,11 +20,18 @@ function FullPage() {
   //     setActiveIcon(0)
   //   }
   // })
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="mainContainer">
       <TopBar setActiveTopBar={setActiveIcon} clicked={activeIcon}/>
       <Banner />
-      <Portfolio/>
+      <Portfolio screenSize={width}/>
     </div>
   );
 }
