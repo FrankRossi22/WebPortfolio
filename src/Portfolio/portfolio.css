@@ -18,9 +18,7 @@
 .portfolioSections form {
   margin-top: 20px;
 }
-.portfolioSections  .projectDiv{
- outline: none;
-}
+
 .projectDiv:focus {
   outline: 0;
 }
