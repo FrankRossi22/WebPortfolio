@@ -117,3 +117,13 @@
   border-radius: 10px;
   opacity: .8;
 }
+@media (min-width: 100px) {
+  .bannerFlex {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 500px) {
+  .bannerFlex {
+    margin-top: 60px;
+  }
+}
