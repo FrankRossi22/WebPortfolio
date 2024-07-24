@@ -2,9 +2,7 @@
   font-family: playFair;
   src: url(../fonts/PlayFairDisplay.ttf);
 }
-section:focus {
-  outline: none;
-}
+
 .portfolioSections {
   background-color: #faf7f7;
   padding: 2%;
