@@ -5,12 +5,11 @@
 .experience .experienceFlex {
   margin-bottom: 0px;
   margin-top: 0px;
-  max-width: 550px;
   height: 300px;
   display: block;
 }
 .experienceDiv {
-  display: block;
+  display: inline-block;
   max-width: 500px;
   height: 250px;
   outline: auto;
@@ -88,6 +87,7 @@
     width: 120px;
   }
   .experienceDiv {
+    display: block;
     height: 340px;
     transition: all .5s;  
   }
@@ -105,18 +105,24 @@
     width: 120px;
   }
   .experienceDiv {
+    display: block;
     height: 300px;
     transition: all .5s;  
   }
   .experience .experienceFlex {
     
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
 }
 @media (min-width: 530px) {
  .experienceDiv {
+  display: inline-block;
   height: 250px;
   transition: all .5s;
+}
+.experience .experienceFlex {
+    
+  margin-top: 10px;
 }
 }
