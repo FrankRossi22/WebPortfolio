@@ -85,10 +85,22 @@ svg:hover {
     width: 60px;
     transition: transform .2s ease-out, width .5s;
   }
+  .portfolioSections .projectDiv {
+    outline: none;
+  }
+  .portfolioSections .experienceDiv {
+    outline: none;
+  }
 }
 @media (min-width: 700px) {
   svg {
     width: 100px;
     transition: transform .2s ease-out, width .5s;
+  }
+  .portfolioSections .projectDiv {
+    outline: auto;
+  }
+  .portfolioSections .experienceDiv {
+    outline: auto;
   }
 }
