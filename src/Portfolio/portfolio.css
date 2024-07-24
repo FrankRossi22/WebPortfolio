@@ -18,7 +18,9 @@
 .portfolioSections form {
   margin-top: 20px;
 }
-
+.portfolioSections  a{
+ outline: none;
+}
 .contactEmail {
   height: 30px;
   padding-bottom: 5px;
