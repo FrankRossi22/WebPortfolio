@@ -92,7 +92,7 @@ svg:hover {
     outline: none;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   svg {
     width: 100px;
     transition: transform .2s ease-out, width .5s;
