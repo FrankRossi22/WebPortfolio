@@ -18,8 +18,11 @@
 .portfolioSections form {
   margin-top: 20px;
 }
-.portfolioSections  a{
+.portfolioSections  .projectDiv{
  outline: none;
+}
+.projectDiv:focus {
+  outline: 0;
 }
 .contactEmail {
   height: 30px;
