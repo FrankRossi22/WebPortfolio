@@ -19,7 +19,7 @@ function TopBar({setActiveTopBar, clicked}) {
         <ListItem val={'projects'} currClass={(clicked === 1 ? 'active' : 'notActive')} name='Projects' handleBarClick={() => setActiveTopBar(1)}/>
         <ListItem val={'skills'} currClass={(clicked === 2 ? 'active' : 'notActive')} name='Skills' handleBarClick={() => setActiveTopBar(2)}/>
         <ListItem val={'experience'} currClass={(clicked === 3 ? 'active' : 'notActive')} name='Experience' handleBarClick={() => setActiveTopBar(3)}/>
-        <ListItem val={'contactMe'} currClass={(clicked === 4 ? 'active' : 'notActive')} name='Contact' handleBarClick={() => setActiveTopBar(4)}/>
+        <ListItem val={'contactMe'} currClass={(clicked === 4 ? 'active' : 'notActive')} name='Contact ' handleBarClick={() => setActiveTopBar(4)}/>
       </ul>
       </div>
       <div className='fillerDiv'></div>
