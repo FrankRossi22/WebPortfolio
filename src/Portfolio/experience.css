@@ -89,6 +89,8 @@
   }
   .experienceDiv {
     display: block;
+    appearance: inherit;
+    -webkit-appearance: none;
     height: 340px;
     outline-color: black;
     transition: all .5s;  
