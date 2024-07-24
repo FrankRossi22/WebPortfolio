@@ -8,7 +8,7 @@
   padding: 2%;
 }
 .portfolioSections input {
-  margin: 10px;
+  margin: 8px;
   border-color: #dfdfdf;
   border-radius: 5px;
   border-style: solid;
@@ -26,10 +26,12 @@
   height: 30px;
   padding-bottom: 5px;
 }
-.contactComment {
+.portfolioSections .contactComment {
   padding-bottom: 150px;
  }
-
+.portfolioSections .contactButton {
+  padding: 7px;
+}
 .portfolioSections .projects{
   margin-top: 3%;
 }

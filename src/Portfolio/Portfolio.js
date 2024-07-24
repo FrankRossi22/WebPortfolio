@@ -114,7 +114,7 @@ function ContactMe({elRef}) {
 
       <input type="text" name="mail" size='50' className='contactEmail' placeholder='Your Email'/><br/>
 
-      <input type="text" name="comment" size="50" className='contactComment' placeholder='Your Message'/><br/><br/>
+      <input type="text" name="comment" size="50" className='contactComment' placeholder='Your Message'/><br/>
       <input type="submit" value="Send" className='contactButton'/>
       </form>
     </section>
