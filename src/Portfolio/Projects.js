@@ -59,8 +59,8 @@ function Projects({elRef, screenSize}) {
       <Project name='Lunch Count' createdWith={lunchCountMadeWith} id={'LC'} links={[
         {link: 'https://github.com/FrankRossi22/LunchCount2024', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', name: 'GitHub'}
       ]}
-      description={"With the large growth of LMS (Learning Management Systems) over the past decade, " 
-        + "Lunch Count serves as a building block to improving these platforms by providing a robust system for tracking student lunch orders."
+      description={"With the large growth of Learning Management Systems over the past decade, " 
+        + "Lunch Count serves as a building block to improve these platforms by providing a robust system for tracking student lunch orders."
         + "Users (Students, Teachers, and Admin) each have their own dashboard with admin having sole access to lunch creation and updating. This was created using JS, Express, and NedB Databases."} 
       image={"./images/lunchCount.png"}/>
       <Project name='Baja Buckeyes' createdWith={bajaMadeWith} id={'BB'} links={[
