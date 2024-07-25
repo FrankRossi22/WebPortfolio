@@ -3,38 +3,24 @@
   src: url(fonts/PlayFairDisplay.ttf);
 }
 
+@keyframes example {
+  0%   {background-color: #000000;}
+  25%  {background-color: #020918;}
+  50%  {background-color: #0b1a3b;}
+  75% {background-color: #102450;}
+  100%   {background-color: #000000;}
+}
 
-.bannerBackground4 {
-  background-color: #000000;
-  background-blend-mode: difference ;
-  background-image: url('https://images.unsplash.com/photo-1554034483-04fda0d3507b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-repeat: round;
-  transition: background-color 3s ease, height 1s ease-in-out;
-}
-.bannerBackground3 {
-  background-color: #020918;
-  background-blend-mode: difference ;
-  background-image: url('https://images.unsplash.com/photo-1554034483-04fda0d3507b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-repeat: round;
-  transition: background-color 3s ease, height 1s ease-in-out;
-}
-.bannerBackground2 {
-  background-color: #0b1a3b;
-  background-blend-mode: difference ;
-  background-image: url('https://images.unsplash.com/photo-1554034483-04fda0d3507b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
-  background-repeat: round;
-  transition: background-color 3s ease-in-out, height 1s ease-in-out;
-}
-.bannerBackground1 {
+.bannerBackground {
   background-color: #102450;
   background-blend-mode: difference ;
   background-image: url('https://images.unsplash.com/photo-1554034483-04fda0d3507b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
   background-repeat: round;
   transition: background-color 3s ease-in-out, height 1s ease-in-out;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
 
 .banner{
