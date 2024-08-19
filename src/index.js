@@ -23,7 +23,7 @@ To Do -
         BlackJack
         Connect 4 -- DONE
         Roulette
-        Snake
+        Snake -- Done
         Pong
         RPS
 */

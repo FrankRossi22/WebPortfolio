@@ -45,7 +45,7 @@
 .experienceTop {
   display: flex;
   flex-direction: row;
-  gap: 30%;
+  gap: 10%;
   align-items: center;
 }
 .experienceYear {
@@ -85,7 +85,7 @@
     text-align: right;
     font-size: 14px;
     font-weight: 500;
-    width: 120px;
+    width: 160px;
   }
   .experienceDiv {
     display: block;
@@ -106,7 +106,7 @@
     text-align: right;
     font-size: 14px;
     font-weight: 500;
-    width: 120px;
+    width: 160px;
   }
   .experienceDiv {
     display: block;
